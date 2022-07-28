@@ -2,7 +2,7 @@ import { useState } from "react"
 import { projectAuth } from "../firebase/config" //from firebase to use built in Auth Service
 import { useAuthContext } from "./useAuthContext" //custom Auth hook
 
-const useLogout = () => {
+export const useLogout = () => {
     const [error, setError] = useState(null)
     const [isPending, setIsPending ] = useState(false)
     const {dispatch} = useAuthContext()
